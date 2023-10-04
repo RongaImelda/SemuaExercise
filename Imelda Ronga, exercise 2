@@ -1,0 +1,23 @@
+
+// IIEF Function
+(function () {
+    
+    const num1 = 300;
+    const num2 = 30;
+    // Callback Function
+    function findLarger(num1, num2, callback) {
+      let result;
+      if (num1 > num2) {
+        result = num1;
+      } else {
+        result = num2;
+      }
+      callback(result);
+    }
+  
+    findLarger(num1, num2, function (larger) {
+      console.log("Callback Result:", larger);
+    });
+
+  })();
+  
